@@ -271,6 +271,7 @@ class PAPI(object):
 				'PatronNotes':kwargs.get('patronNotes',''),
 				'Answer':kwargs.get('answer',None),
 				'ActivationDate':'/Date({timestamp}000-0000)/'.format(timestamp=kwargs.get('activationDate',str(int(time())))),
+				'workstationID':workstationID,
 				'UserID':userID,
 				'RequestingOrgID':requestingOrgID,
 				'TargetGUID':kwargs.get('targetGUID','')}
